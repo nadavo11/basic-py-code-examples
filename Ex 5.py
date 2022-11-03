@@ -13,3 +13,13 @@ Include your run-time code in a main method1
 
 _____________________________________________________________________________
 """
+import random
+
+#familliar with ASCII code yet?
+valid_chars = range(33,126)
+
+password = ""
+for i in range(16):
+    password = password+(chr(random.choice(valid_chars)))
+
+print(f'your new password is: {password}')

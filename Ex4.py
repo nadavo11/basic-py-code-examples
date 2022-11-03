@@ -18,6 +18,11 @@ import math
 
 
 def is_prime(n):
+
+    # 1 and 0 aren't prime
+    if n <= 1:
+        return False
+
     # look for divisors:
     for i in range(2, int(math.sqrt(n))):
         # if we find one, then n isn't prime, is it?
@@ -25,7 +30,7 @@ def is_prime(n):
 
     return True
 
-
+"""
 # get user input, cast to int!
 n = int(input("Hello dear user. please choose a positive whole number of your choice:\n"))
 
@@ -34,3 +39,4 @@ if is_prime(n):
     print("prime")
 else:
     print("not prime")
+"""
